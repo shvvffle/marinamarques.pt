@@ -1,0 +1,892 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700);
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #008080;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: lowercase;
+}
+
+
+h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sep {
+    max-width: 80px;
+    border: 2px solid #40E0D0;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+/* START PRELOADER */
+
+#loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #008080;
+    z-index: 99;
+    height: 100%;
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../img/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
+
+
+/* END PRELOADER */
+
+
+/* start header */
+
+.navbar-fixed-top {
+    background-color: #008080;
+}
+
+.navbar-brand {
+    padding: 0px 15px;
+    height: 56px;
+    margin-left: 0;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    border: none;
+}
+
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #40E0D0;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #008080;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: #008080;
+}
+
+.navbar-toggle .icon-bar {
+    width: 35px;
+    height: 5px
+}
+
+#ResponsiveNav li a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-transition: all .40s ease-in-out;
+    transition: all .40s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    text-transform: lowercase;
+}
+
+#ResponsiveNav li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 3px;
+    background: #40E0D0;
+    -webkit-transition: .35s;
+    transition: .35s;
+}
+
+#ResponsiveNav li a:hover {
+    color: #40E0D0;
+}
+
+#ResponsiveNav ul li a:hover:after,
+#ResponsiveNav ul li a:focus:after,
+#ResponsiveNav ul li a:active:after {
+    width: 70%;
+}
+
+button.navbar-toggle.collapsed {
+    background-color: #008080;
+    border: none;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #40E0D0;
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+
+/*/ start hamburger menu desktop overwrite bootstrap /*/
+
+.navbar-header {
+    float: none;
+}
+
+.navbar-toggle {
+    display: block;
+}
+
+.navbar-collapse.collapse {
+    display: none!important;
+}
+
+.navbar-nav {
+    float: none!important;
+}
+
+.navbar-nav>li {
+    float: none;
+}
+
+.navbar-collapse.collapse.in {
+    display: block !important;
+}
+
+
+/*/ end hamburger menu desktop overwrite bootstrap /*/
+
+
+/*/ start intro /*/
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    background: url(../img/mm_header.jpg) no-repeat top center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15% 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.brand-heading {
+    font-size: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+.intro .intro-body .brand-heading span,
+.intro-text span {
+    color: #40E0D0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+span.city {
+    background-color: #40E0D0;
+    color: #fff;
+    border-radius: 4px;
+    width: 15px;
+}
+
+@media (min-width: 768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+    .intro .intro-body .brand-heading {
+        font-size: 130px;
+    }
+    .intro .intro-body .intro-text {
+        font-size: 35px;
+    }
+}
+
+.mouse-warp {
+    margin: 40px auto;
+    display: block;
+    width: 28px;
+    opacity: 0.5;
+}
+
+.mouse {
+    width: 28px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 14px;
+}
+
+.scroll {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #fff;
+    position: relative;
+    left: 10px;
+    -webkit-animation: scrolls 1.3s ease-out infinite;
+}
+
+@-webkit-keyframes scrolls {
+    0% {
+        top: 8px;
+        opacity: 0;
+        -webkit-transform: scaleY(1) scaleX(1);
+    }
+    5% {
+        top: 8px;
+        opacity: 0.8;
+        -webkit-transform: scaleY(1.2) scaleX(1.2);
+    }
+    10% {
+        top: 8px;
+        opacity: 1;
+        -webkit-transform: scaleY(1.6) scaleX(1.6);
+    }
+    15% {
+        top: 8px;
+        opacity: 1;
+        -webkit-transform: scaleY(1.2) scaleX(1.2);
+    }
+    20% {
+        top: 8px;
+        opacity: 1;
+        -webkit-transform: scaleY(1.2) scaleX(1.2);
+    }
+    30% {
+        top: 15px;
+        opacity: 1;
+        -webkit-transform: scaleY(1.2) scaleX(1.2);
+    }
+    100% {
+        top: 30px;
+        opacity: 0;
+        -webkit-transform: scaleY(1.2) scaleX(0.8);
+    }
+}
+
+
+/* End Scroll Down Indicator */
+
+
+/*/ end intro /*/
+
+
+/*/ start about /*/
+
+#about-me {
+    margin-top: 20px;
+}
+
+#about-me h2 {
+    font-weight: 700;
+    margin-top: 22px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.go-right p {
+    float: right;
+    margin-top: 5%;
+}
+
+.go-right span {
+    color: #40E0D0;
+    font-weight: 700;
+}
+
+.button-group {
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.text {
+    background: #008080;
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+    padding: 0 25px;
+    line-height: 50px;
+}
+
+.icon-cv {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    box-sizing: border-box;
+    border: 4px solid #008080;
+    border-left: none;
+    transition: 600ms transform ease-in-out;
+    transform: rotateY(90deg);
+    transform-origin: left;
+    color: #008080;
+    background: #fff;
+    text-align: center;
+}
+
+.button-group:hover .icon-cv {
+    transform: rotateY(0deg);
+}
+
+.button-group {
+    perspective: 200px;
+    perspective-origin: calc(100% - 50px);
+    margin-top: 5%;
+}
+
+.about-inner {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.about-inner>img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+
+.about-ct .textbox-about {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.about-ct:hover .textbox-about {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.textbox-about {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+div.button-download {
+    border: 2px solid #fff;
+    padding: 12px 18px;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    margin-top: 25px;
+    font-size: 18px;
+    color: #fff;
+    margin: 5% 5%;
+}
+
+div.button-download a {
+    color: #fff;
+    font-size: 18px;
+    margin: 15px;
+}
+
+div.button-download a:hover {
+    color: #008080;
+}
+
+
+/*/ start count stats /*/
+
+#counter-stats {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.stats {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: lowercase;
+}
+
+.stats .fa {
+    color: #008080;
+    font-size: 60px;
+}
+
+
+/*/ end count stats /*/
+
+
+/*/ end about /*/
+
+
+/*/ start about work experience /*/
+
+#experience {
+    margin-top: 20px;
+}
+
+#experience h2 {
+    font-weight: 700;
+    margin-top: 22px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.timeline-label h4 {
+    margin-top: 0;
+    font-size: 1.9em;
+    color: #40E0D0;
+    padding: 1em 0em;
+    font-weight: 700;
+}
+
+.timeline-label p {
+    color: #696969;
+    padding: 0.5em 0em;
+    line-height: 1.7em;
+}
+
+.button-group-li {
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.timeline-label a {
+    text-decoration: none;
+}
+
+.text-timeline {
+    background: #40E0D0;
+    color: #fff;
+    font-size: 18px;
+    height: 40px;
+    padding: 0 25px;
+    line-height: 40px;
+}
+
+.icon-li {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    box-sizing: border-box;
+    border: 4px solid #40E0D0;
+    border-left: none;
+    transition: 600ms transform ease-in-out;
+    transform: rotateY(90deg);
+    transform-origin: left;
+    color: #40E0D0;
+    background: #fff;
+    text-align: center;
+}
+
+.button-group-li:hover .icon-li {
+    transform: rotateY(0deg);
+}
+
+.button-group-li {
+    perspective: 200px;
+    perspective-origin: calc(100% - 40px);
+}
+
+.timeline-label {
+    padding-left: 10%;
+    margin-top: 2%;
+}
+
+.col-exp {
+    margin-top: 2%;
+}
+
+.timeline .timeline-experience {
+    position: relative;
+    float: left;
+    margin-left: 2em;
+    padding-left: 4em;
+    border-left: 2px solid #ccc;
+}
+
+.timeline .timeline-experience-info h5 {
+    margin-top: 0;
+    margin-bottom: 0.333em;
+    font-size: 18px;
+    color: #40E0D0;
+    font-weight: 700;
+}
+
+.timeline .timeline-experience-info .timeline-role {
+    font-size: 16px;
+    color: #008080;
+    font-weight: 600;
+}
+
+.timeline .timeline-experience-info p {
+    font-size: 12px;
+    color: #333;
+    line-height: 1.7em;
+}
+
+.timeline time {
+    display: block;
+    width: 4.111em;
+    color: #ccc;
+    text-align: center;
+    font-weight: 700;
+}
+
+.timeline .timeline-experience-img,
+.timeline .timeline-experience-info,
+.timeline .timeline-experience-info h5,
+.timeline .timeline-experience-info .role,
+.timeline .timeline-experience-info p {
+    clear: none;
+}
+
+.timeline .timeline-experience .timeline-circle {
+    position: absolute;
+    top: 1em;
+    left: -0.86em;
+    display: block;
+    width: 1.222em;
+    height: 1.222em;
+    border: 3px solid #ccc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+}
+
+.timeline .timeline-experience-img {
+    float: left;
+    width: 4em;
+    height: 4em;
+}
+
+.timeline .timeline-experience-img img {
+    width: 100%;
+}
+
+.timeline .timeline-experience-info {
+    margin-left: 5.444em;
+}
+
+.timeline-experience-info p {
+    margin-top: 0.67em;
+    margin-bottom: 1.34em;
+}
+
+
+/*/ end about work experience /*/
+
+
+/*/ end about /*/
+
+
+/*/ start work portfolio /*/
+
+#portfolio {
+  margin-top: 20px;
+}
+
+
+.portfolio-ct h2 {
+    font-weight: 700;
+    margin-top: 22px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.grid-portfolio {
+    margin-top: 20px;
+}
+
+.portfolio-details {
+    text-align: center;
+}
+
+.thumbnail {
+    max-width: 500px;
+    border: none;
+    position: relative;
+}
+
+.portfolio-details h3 {
+    color: #008080;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio-details p {
+    font-size: 14px;
+}
+
+ul.portfolio-tags {
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+li.portfolio-tag {
+    list-style-type: none;
+    font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #40E0D0;
+    display: inline;
+    border: 2px solid #40E0D0;
+    padding: 8px;
+}
+
+i.portfolio-link {
+    font-size: 30px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 20px;
+    color: #fff;
+    margin: 20% auto;
+}
+
+
+.portfolio-item-ct .textbox-portfolio {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    background: #40e0d0;
+    opacity: 0.9;
+}
+
+.portfolio-item-ct:hover .textbox-portfolio {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.textbox-portfolio {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+div.button-weblink {
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*/ end work portfolio /*/
+
+
+/*/ start services /*/
+
+#services {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#services h2 {
+    font-weight: 700;
+    margin-top: 22px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.ct-services {
+    margin-top: 20px;
+}
+
+#services h3 {
+    color: #40E0D0;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+#services .fa {
+    font-size: 60px;
+    color: #008080;
+}
+
+
+#services .rotate:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+#services .rotate {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow: hidden;
+}
+
+
+
+/*/ end services /*/
+
+
+/*/ start testimionals /*/
+
+#testimionals {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#testimionals h2 {
+    font-weight: 700;
+    color: #fff;
+    margin-top: 22px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.testimionals-bg {
+    width: 100%;
+    height: auto;
+    background: url(../img/mm_testimionals.png) no-repeat top center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.quotes {
+    color: #fff;
+    font-size: 60px;
+}
+
+.client {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.carousel-caption {
+    position: static;
+    /*/ this is to replace the images of bootstrap slider /*/
+    font-size: 18px;
+    color: #fff;
+    min-height: 200px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background: none;
+}
+
+
+/*/ end testimionals /*/
+
+
+/*/ start contact /*/
+
+footer {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#contact h2 {
+    font-weight: 700;
+    margin-top: 22px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+footer p {
+  margin-top: 50px;
+}
+
+.social,
+footer a {
+    font-size: 30px;
+    color: #24242a;
+    margin: 10px;
+}
+
+footer a:hover,
+footer a:after {
+    color: #40E0D0;
+}
+
+.copyright {
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+
+/*/ end contact /*/
+
+
+/*/ media queries /*/
+
+@media only screen and (max-width: 480px) {
+    .textbox p.date {
+        font-size: 10px;
+        margin-top: 5%;
+    }
+    .textbox h5 {
+        font-size: 12px;
+    }
+    .textbox p {
+        font-size: 12px;
+    }
+    .textbox h2>img {
+        width: 20%;
+    }
+}
