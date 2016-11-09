@@ -209,8 +209,7 @@ button.navbar-toggle.collapsed {
     text-align: left;
 }
 
-.intro .intro-body .brand-heading span,
-.intro-text span {
+div.brand-heading, .intro-text span {
     color: #40E0D0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -323,12 +322,12 @@ span.city {
     text-align: center;
 }
 
-.go-right p {
+.about-intro-text p {
     float: right;
     margin-top: 5%;
 }
 
-.go-right span {
+.about-intro-text span {
     color: #40E0D0;
     font-weight: 700;
 }
