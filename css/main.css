@@ -1,4 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700);
+
+/* {
+   background-color:rgba(0,0,0,0.1);
+}
+*/
+
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -83,12 +90,12 @@ h3, h4, h5 {
 }
 
 .navbar-inverse .navbar-toggle {
-    border-color: #008080;
+    border: none;
 }
 
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-    border-color: #008080;
+    border: none;
 }
 
 .navbar-toggle .icon-bar {
@@ -189,8 +196,6 @@ button.navbar-toggle.collapsed {
     text-align: center;
     color: white;
     background: url(../img/mm_header.jpg) no-repeat top center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
@@ -334,6 +339,8 @@ span.city {
 
 .button-group {
     cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
 }
 
@@ -354,21 +361,29 @@ span.city {
     box-sizing: border-box;
     border: 4px solid #008080;
     border-left: none;
-    transition: 600ms transform ease-in-out;
-    transform: rotateY(90deg);
-    transform-origin: left;
+    -webkit-transition:600ms -webkit-transform ease-in-out;
+    transition:600ms -webkit-transform ease-in-out;
+    transition:600ms transform ease-in-out;
+    transition: 600ms transform ease-in-out, 600ms -webkit-transform ease-in-out;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left;
     color: #008080;
     background: #fff;
     text-align: center;
 }
 
 .button-group:hover .icon-cv {
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
 }
 
 .button-group {
-    perspective: 200px;
-    perspective-origin: calc(100% - 50px);
+    -webkit-perspective: 200px;
+            perspective: 200px;
+    -webkit-perspective-origin: calc(100% - 50px);
+            perspective-origin: calc(100% - 50px);
     margin-top: 5%;
 }
 
@@ -472,20 +487,22 @@ div.button-download a:hover {
 
 .timeline-label h4 {
     margin-top: 0;
-    font-size: 1.9em;
+    font-size: 30px;
     color: #40E0D0;
-    padding: 1em 0em;
+    padding: 16px 0px;
     font-weight: 700;
 }
 
 .timeline-label p {
     color: #696969;
-    padding: 0.5em 0em;
-    line-height: 1.7em;
+    padding: 8px 0px;
+    line-height: 27px;
 }
 
 .button-group-li {
     cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
 }
 
@@ -510,25 +527,33 @@ div.button-download a:hover {
     box-sizing: border-box;
     border: 4px solid #40E0D0;
     border-left: none;
-    transition: 600ms transform ease-in-out;
-    transform: rotateY(90deg);
-    transform-origin: left;
+    -webkit-transition:600ms -webkit-transform ease-in-out;
+    transition:600ms -webkit-transform ease-in-out;
+    transition:600ms transform ease-in-out;
+    transition: 600ms transform ease-in-out, 600ms -webkit-transform ease-in-out;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left;
     color: #40E0D0;
     background: #fff;
     text-align: center;
 }
 
 .button-group-li:hover .icon-li {
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
 }
 
 .button-group-li {
-    perspective: 200px;
-    perspective-origin: calc(100% - 40px);
+    -webkit-perspective: 200px;
+            perspective: 200px;
+    -webkit-perspective-origin: calc(100% - 40px);
+            perspective-origin: calc(100% - 40px);
 }
 
 .timeline-label {
-    padding-left: 10%;
+    padding-left: 7%;
     margin-top: 2%;
 }
 
@@ -539,8 +564,8 @@ div.button-download a:hover {
 .timeline .timeline-experience {
     position: relative;
     float: left;
-    margin-left: 2em;
-    padding-left: 4em;
+    margin-left: 32px;
+    padding-left: 64px;
     border-left: 2px solid #ccc;
 }
 
@@ -561,12 +586,12 @@ div.button-download a:hover {
 .timeline .timeline-experience-info p {
     font-size: 12px;
     color: #333;
-    line-height: 1.7em;
+    line-height: 27px;
 }
 
 .timeline time {
     display: block;
-    width: 4.111em;
+    width: 65px;
     color: #ccc;
     text-align: center;
     font-weight: 700;
@@ -582,22 +607,20 @@ div.button-download a:hover {
 
 .timeline .timeline-experience .timeline-circle {
     position: absolute;
-    top: 1em;
-    left: -0.86em;
+    top: 16px;
+    left: -13px;
     display: block;
-    width: 1.222em;
-    height: 1.222em;
+    width: 19px;
+    height: 19px;
     border: 3px solid #ccc;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
     background-color: #F5F5F5;
 }
 
 .timeline .timeline-experience-img {
     float: left;
-    width: 4em;
-    height: 4em;
+    width: 64px;
+    height: 64px;
 }
 
 .timeline .timeline-experience-img img {
@@ -605,12 +628,12 @@ div.button-download a:hover {
 }
 
 .timeline .timeline-experience-info {
-    margin-left: 5.444em;
+    margin-left: 87px;
 }
 
 .timeline-experience-info p {
-    margin-top: 0.67em;
-    margin-bottom: 1.34em;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -646,6 +669,8 @@ div.button-download a:hover {
     max-width: 500px;
     border: none;
     position: relative;
+    background: none;
+    padding: 0;
 }
 
 .portfolio-details h3 {
@@ -763,13 +788,11 @@ div.button-weblink {
 
 #services .rotate {
     -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
     -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
+    transition-property:-webkit-transform;
+    transition-property:transform;
+    transition-property: transform, -webkit-transform;
     overflow: hidden;
 }
 
@@ -799,8 +822,6 @@ div.button-weblink {
     width: 100%;
     height: auto;
     background: url(../img/mm_testimionals.png) no-repeat top center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
