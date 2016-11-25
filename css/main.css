@@ -30,10 +30,24 @@ h3, h4, h5 {
 }
 
 .sep {
-    max-width: 80px;
+    width: 50px;
     border: 2px solid #40E0D0;
     margin-top: 10px;
     margin-bottom: 40px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.sep:hover, .sep:active {
+    width: 100px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* SCROLL TO TOP ARROW */
