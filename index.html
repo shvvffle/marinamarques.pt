@@ -66,22 +66,22 @@
                         <!-- start ticker -->
                         <div class="ticker">
                             <div class="brand-heading">
-                              <span class="txt-rotate" data-period="100" data-rotate='[ "Hello,", "Olá,", "Hallo,", "Salut,", "Ciao,", "Hola,", "Hej," ]'></span>
+                                <span class="txt-rotate" data-period="100" data-rotate='[ "Hello,", "Olá,", "Hallo,", "Salut,", "Ciao,", "Hola,", "Hej," ]'></span>
                             </div>
                         </div>
                         <!-- end ticker-->
                         <p class="intro-text">my name is Marina Marques.
                             <br> I'm a <i class="fa fa-code" aria-hidden="true"></i> <span class="intro-text-hgl">front-end developer</span> <i class="fa fa-code" aria-hidden="true"></i>
                             <br>based in the beautiful city of <span class="city">Lisbon</span>, Portugal.</p>
-                            <!-- start mouse wrap -->
-                          <div class="mouse-warp">
-                              <a href="#mouse-here" class="page-scroll">
-                                  <div class="mouse">
-                                      <div class="scroll"></div>
-                                  </div>
-                              </a>
-                          </div>
-                          <!-- end mouse wrap -->
+                        <!-- start mouse wrap -->
+                        <div class="mouse-warp">
+                            <a href="#mouse-here" class="page-scroll">
+                                <div class="mouse">
+                                    <div class="scroll"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- end mouse wrap -->
                     </div>
                     <!-- end column wrapping -->
                 </div>
@@ -115,7 +115,8 @@
                 </div>
                 <div class="col-lg-6 about-intro-text">
                     <p>I'm a <span>front-end developer</span> and a <span>photojournalist enthusiast</span>.
-                        <br> When I was in my teens and my mom was not on the phone (dial-up Internet, hello trouble!), I used to spend a lot of time trying to improve my super MySpace profile. I remember the thrill when I finally figured out why my background image was not working.
+                        <br> When I was in my teens and my mom was not on the phone (dial-up Internet, hello trouble!), I used to spend a lot of time trying to improve my super MySpace profile. I remember the thrill when I finally figured out why my background
+                        image was not working.
                         <br> To this date, I still remember that moment. I want to continue to feel the thrill of understanding how things work and how to make them functional. </p>
                     <div class="button-group">
                         <div class="text">Download CV</div>
@@ -165,8 +166,8 @@
             <div class="experience-ct">
                 <div class="row">
                     <div class="col-md-6 timeline-label">
-                        <h4>focus points</h4>
-                        <p>front end development, wordpress development and SEO improvements.</p>
+                        <h4>key areas</h4>
+                        <p>front end development, wordpress development and SEO improvement.</p>
                         <a href="https://pt.linkedin.com/in/marinamarques9" target="_blank">
                             <div class="button-group-li">
                                 <div class="text-timeline">View on LinkedIn</div>
@@ -285,10 +286,10 @@
                                 <br> using Javascript.
                             </p>
                             <ul class="portfolio-tags">
-                              <li class="portfolio-tag">HTML5 / CSS3</li>
-                              <li class="portfolio-tag">BOOTSTRAP</li>
-                              <li class="portfolio-tag">JAVASCRIPT</li>
-                              <li class="portfolio-tag">SEO</li>
+                                <li class="portfolio-tag">HTML5 / CSS3</li>
+                                <li class="portfolio-tag">BOOTSTRAP</li>
+                                <li class="portfolio-tag">JAVASCRIPT</li>
+                                <li class="portfolio-tag">SEO</li>
                             </ul>
                         </div>
                     </div>
@@ -307,8 +308,8 @@
                         </div>
                         <div class="caption portfolio-details">
                             <h3>PERSONAL WEBSITE</h3>
-                            <p>Responsive personal/resume website
-                              <br> using Bootstrap for the first time.
+                            <p>Responsive website
+                                <br> using Bootstrap.
                             </p>
                             <ul class="portfolio-tags">
                                 <li class="portfolio-tag">HTML5 / CSS3</li>
@@ -458,10 +459,10 @@
     <script src="js/jquery-2.1.4.js"></script>
     <!-- Preloader -->
     <script type="text/javascript">
-    jQuery(window).load(function() {
-        jQuery("#status").fadeOut("slow");
-        jQuery("#loader").delay(300).fadeOut();
-    })
+        jQuery(window).load(function() {
+            jQuery("#status").fadeOut("slow");
+            jQuery("#loader").delay(300).fadeOut();
+        })
     </script>
     <!-- end Preloader -->
     <script src="js/jquery.easing.min.js"></script>
@@ -470,39 +471,39 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- hello typer start -->
     <script type="text/javascript">
-    window.onload = function() {
-      var elements = document.getElementsByClassName('txt-rotate');
-      for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-rotate');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtRotate(elements[i], JSON.parse(toRotate), period);
-        }
-      }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".txt-rotate > .wrap { border-right: 10px solid #40E0D0 }";
-      document.body.appendChild(css);
-    };
+        window.onload = function() {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 10px solid #40E0D0 }";
+            document.body.appendChild(css);
+        };
     </script>
     <!-- hello typer end -->
     <!-- google analytics start -->
     <script>
-    (function(b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function() {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = 'https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-62476454-1', 'auto');
-    ga('send', 'pageview');
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-62476454-1', 'auto');
+        ga('send', 'pageview');
     </script>
     <!-- google analytics end  -->
 </body>
