@@ -963,23 +963,24 @@ footer a:hover, footer a:after {
     }
 
     .brand-heading {
-      font-size: 70px;
+      font-size: 85px;
+      margin-top: 10%;
     }
 
     .col-exp {
-    margin-top: 15%;
+      margin-top: 15%;
     }
 
     .timeline .timeline-experience {
-    margin-left: 20px;
-    padding-left: 20px;
+      margin-left: 20px;
+      padding-left: 20px;
     }
 
     .timeline time {
-    width: 40px;
+      width: 40px;
     }
 
     .services-item {
-    margin-bottom: 15%;
+      margin-bottom: 15%;
     }
 }
