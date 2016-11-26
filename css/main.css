@@ -1,10 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700);
 
-/* {
-   background-color:rgba(0,0,0,0.1);
-}
-*/
 
+/* Overriding default text selection color*/
+
+p::selection, h2::selection {
+  background: #40E0D0;
+  color: #fff;
+}
+p::-moz-selection, h2::selection {
+  background: #40E0D0;
+  color: #fff;
+}
+
+
+/* general styles */
 
 body {
     font-family: 'Roboto', sans-serif;
