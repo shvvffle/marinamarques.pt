@@ -43,9 +43,6 @@ h2:hover:after {
     width: 100px;
 }
 
-
-
-
 h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
 }
@@ -502,7 +499,7 @@ div.button-download a {
 }
 
 div.button-download a:hover {
-    color: #008080;
+    color: #40E0D0;
 }
 
 
