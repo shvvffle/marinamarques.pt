@@ -946,22 +946,6 @@ footer a:hover, footer a:after, footer a:visited footer a:focus {
 /*/ media queries /*/
 
 @media only screen and (max-width: 480px) {
-
-
-    .textbox p.date {
-        font-size: 10px;
-        margin-top: 5%;
-    }
-    .textbox h5 {
-        font-size: 12px;
-    }
-    .textbox p {
-        font-size: 12px;
-    }
-    .textbox h2>img {
-        width: 20%;
-    }
-
     .brand-heading {
       font-size: 85px;
       margin-top: 10%;
