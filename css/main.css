@@ -930,7 +930,7 @@ footer p {
     margin: 10px;
 }
 
-footer a:hover, footer a:after {
+footer a:hover, footer a:after, footer a:visited footer a:focus {
     color: #40E0D0;
 }
 
