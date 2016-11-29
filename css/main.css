@@ -504,6 +504,10 @@ div.button-social a:hover {
     color: #40E0D0;
 }
 
+.button-group:focus, .icon-cv:focus, .text:focus{
+  outline:0;
+}
+
 
 /*/ start count stats /*/
 
@@ -797,7 +801,9 @@ div.button-weblink {
     text-align: center;
 }
 
-
+.portfolio-tag:focus, .portfolio-tags:focus{
+  outline:0;
+}
 /*/ end work portfolio /*/
 
 
