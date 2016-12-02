@@ -63,7 +63,7 @@ h3, h4, h5 {
     z-index: 999;
 }
 
-#return-to-top i {
+#return-to-top span {
     color: #fff;
     margin: 0;
     position: relative;
@@ -81,7 +81,7 @@ h3, h4, h5 {
     background: rgba(64, 224, 208, 1);
 }
 
-#return-to-top:hover i {
+#return-to-top:hover span {
     color: #fff;
     top: 5px;
 }
@@ -259,11 +259,7 @@ button.navbar-toggle.collapsed {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-align: left;
-}
-
-div.brand-heading, .intro-text span {
     color: #40E0D0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .intro .intro-body .intro-text {
@@ -754,7 +750,7 @@ li.portfolio-tag {
     padding: 8px;
 }
 
-i.portfolio-link {
+span.portfolio-link {
     font-size: 30px;
     border: 2px solid #fff;
     border-radius: 50px;
