@@ -13,17 +13,17 @@
     <link href="favicon.ico" rel="shortcut icon">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700">
     <link href="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <!-- START PRELOADER -->
-    <div id="loader">
-        <div id="status"></div>
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
     </div>
     <!-- END PRELOADER -->
     <!-- Return to Top -->
@@ -454,13 +454,13 @@
     <!-- end footer -->
     <!-- scripts -->
     <script src="js/modernizr-2.8.3.min.js"></script>
-    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
     <!-- Preloader -->
     <script type="text/javascript">
-        jQuery(window).load(function() {
-            jQuery("#status").fadeOut("slow");
-            jQuery("#loader").delay(300).fadeOut();
-        })
+      $(window).on('load', function() { // makes sure the whole site is loaded
+          $('#status').fadeOut(); // will first fade out the loading animation
+          $('#preloader').delay(200).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      })
     </script>
     <!-- end Preloader -->
     <script src="js/jquery.easing.min.js"></script>
