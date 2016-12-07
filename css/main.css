@@ -26,8 +26,6 @@ h2:after {
     margin: 15px auto;
     transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
@@ -51,14 +49,9 @@ h3, h4, h5 {
     height: 50px;
     display: block;
     text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
     border-radius: 35px;
     display: none;
     -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     z-index: 999;
 }
@@ -71,9 +64,6 @@ h3, h4, h5 {
     top: 13px;
     font-size: 19px;
     -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -244,7 +234,6 @@ button.navbar-toggle.collapsed {
     color: white;
     background: url(../img/mm_header.jpg) no-repeat top center scroll;
     background-size: cover;
-    -o-background-size: cover;
 }
 
 .intro .intro-body {
@@ -476,8 +465,6 @@ div.button-social {
     -webkit-transition: all .35s;
     transition: all .35s;
     border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
     margin-top: 25px;
     font-size: 18px;
     color: #fff;
@@ -785,8 +772,6 @@ div.button-weblink {
     -webkit-transition: all .35s;
     transition: all .35s;
     border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
     color: #fff;
     text-align: center;
 }
@@ -832,7 +817,6 @@ div.button-weblink {
 
 #services .rotate:hover {
     -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg);
 }
 
@@ -872,7 +856,6 @@ div.button-weblink {
     height: auto;
     background: url(../img/mm_testimionals.png) no-repeat top center scroll;
     background-size: cover;
-    -o-background-size: cover;
 }
 
 .quotes {
