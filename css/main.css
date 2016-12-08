@@ -232,7 +232,7 @@ button.navbar-toggle.collapsed {
     height: auto;
     text-align: center;
     color: white;
-    background: url(../img/mm_header.jpg) no-repeat top center scroll;
+    background: url(../img/3.jpg) no-repeat top center scroll;
     background-size: cover;
 }
 
@@ -854,7 +854,14 @@ div.button-weblink {
 .testimionals-bg {
     width: 100%;
     height: auto;
-    background: url(../img/mm_testimionals.png) no-repeat top center scroll;
+    background: url(../img/5.jpg) no-repeat top center scroll;
+    background-size: cover;
+}
+
+.testimionals-bg-op {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.3);
     background-size: cover;
 }
 
