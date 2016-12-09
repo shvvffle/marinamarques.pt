@@ -854,8 +854,14 @@ div.button-weblink {
 .testimionals-bg {
     width: 100%;
     height: auto;
-    background: url(../img/mm_testimionals.png) no-repeat top center scroll;
+    background: url(../img/mm_testimionals.jpg) no-repeat top center scroll;
     background-size: cover;
+}
+
+.testimionals-bg-opacity {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .quotes {
