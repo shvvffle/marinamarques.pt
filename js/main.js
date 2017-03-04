@@ -112,3 +112,15 @@ var year = today.getFullYear();
 
 var copyright = document.getElementById("copyright");
 copyright.innerHTML = '© Marina Marques '+ year;
+
+
+// close cookie notice
+
+var consent = jQuery('.closeCookieNotice');
+var cookieNotice = jQuery('.notice');
+
+consent.click(function(e){
+    e.preventDefault;
+    console.log('hey');
+   jQuery(cookieNotice).hide();
+});

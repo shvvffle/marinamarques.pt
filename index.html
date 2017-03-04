@@ -20,9 +20,21 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- heap analytics -->
     <script type="text/javascript">
-    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
-      heap.load("3800196545");
-</script>
+    window.heap = window.heap || [], heap.load = function(e, t) {
+        window.heap.appid = e, window.heap.config = t = t || {};
+        var r = t.forceSSL || "https:" === document.location.protocol,
+            a = document.createElement("script");
+        a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+        var n = document.getElementsByTagName("script")[0];
+        n.parentNode.insertBefore(a, n);
+        for (var o = function(e) {
+                return function() {
+                    heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+            }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+    };
+    heap.load("3800196545");
+    </script>
 </head>
 
 <body>
@@ -117,9 +129,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 about-intro-text">
-                    <p>I'm a <span>front-end developer</span> and a <span>photojournalist enthusiast</span>.<br> My first experience with code was at the time everybody had a MySpace profile. I remember struggling with finding the way to change the background-color
-                        and have flashy text. I used to spend hours trying to customize it and couldn't even seem to see the time get by. The excitement of having the power to structure pages on my own was amazing. It's just like lego. You start piece
-                        by piece, nobody understands what you're building and tada... you have a castle.<br> Here's to building castles with code! <span class="fa fa-beer" aria-hidden="true"></span></p>
+                    <p>I'm a <span>front-end developer</span> and a <span>photojournalist enthusiast</span>.
+                        <br> My first experience with code was at the time everybody had a MySpace profile. I remember struggling with finding the way to change the background-color and have flashy text. I used to spend hours trying to customize it and couldn't even seem to see the time get by. The excitement of having the power to structure pages on my own was amazing. It's just like lego. You start piece by piece, nobody understands what you're building and tada... you have a castle.
+                        <br> Here's to building castles with code! <span class="fa fa-beer" aria-hidden="true"></span></p>
                     <div class="button-group">
                         <div class="text">Download CV</div>
                         <div class="icon-cv"><a href="assets/MarinaMarques_CV.pdf" alt="Marina Marques CV" target="_blank"><span class="fa fa-arrow-circle-down" aria-hidden="true"></span></a></div>
@@ -459,6 +471,14 @@
         <!-- end container footer section -->
     </footer>
     <!-- end footer -->
+    <!-- start cookie disclaimer -->
+    <div class="notice">
+            <p><strong>Cookie Notice:</strong>
+            I'm using cookies to optimise your experience.
+            By using my website you consent to these cookies.
+        <button class="closeCookieNotice">OK</button></p>
+    </div>
+    <!-- end cookie disclaimer -->
     <!-- scripts -->
     <script src="js/modernizr-2.8.3.min.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -468,50 +488,50 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Preloader -->
     <script type="text/javascript">
-        jQuery.noConflict();
-        (function($) {
-            $(window).on('load', function() { // makes sure the whole site is loaded
-                $('#status').fadeOut(); // will first fade out the loading animation
-                $('#preloader').delay(200).fadeOut('slow'); // will fade out the white DIV that covers the website.
-            });
-        })(jQuery);
+    jQuery.noConflict();
+    (function($) {
+        $(window).on('load', function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(200).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        });
+    })(jQuery);
     </script>
     <!-- end Preloader -->
     <!-- hello typer start -->
     <script type="text/javascript">
-        window.onload = function() {
-            var elements = document.getElementsByClassName('txt-rotate');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-rotate');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
-                }
+    window.onload = function() {
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
             }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".txt-rotate > .wrap { border-right: 10px solid #40E0D0 }";
-            document.body.appendChild(css);
-        };
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txt-rotate > .wrap { border-right: 10px solid #40E0D0 }";
+        document.body.appendChild(css);
+    };
     </script>
     <!-- hello typer end -->
     <!-- google analytics start -->
     <script>
-        (function(b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l;
-            b[l] || (b[l] =
-                function() {
-                    (b[l].q = b[l].q || []).push(arguments)
-                });
-            b[l].l = +new Date;
-            e = o.createElement(i);
-            r = o.getElementsByTagName(i)[0];
-            e.src = 'https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-62476454-1', 'auto');
-        ga('send', 'pageview');
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-62476454-1', 'auto');
+    ga('send', 'pageview');
     </script>
     <!-- google analytics end  -->
 </body>
