@@ -708,6 +708,7 @@ div.button-social a:hover {
     position: relative;
     background: none;
     padding: 0;
+    margin: 0 auto;
 }
 
 .portfolio-details h3 {
@@ -926,6 +927,30 @@ footer a:hover, footer a:after, footer a:visited footer a:focus {
 
 
 /*/ end contact /*/
+
+
+/*/ start cookie notice /*/
+
+.notice {
+    background: #008080;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.notice p {
+    padding-top: 10px;
+    font-size: 11px;
+}
+
+.closeCookieNotice {
+    background: #fff;
+    color: #008080;
+    border: 0;
+}
+
+/*/ end cookie notice /*/
 
 
 /*/ media queries /*/
