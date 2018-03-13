@@ -15,7 +15,6 @@ jQuery.noConflict();
     });
 })(jQuery);
 
-
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 jQuery.noConflict();
 (function($) {
@@ -30,9 +29,7 @@ jQuery.noConflict();
     });
 })(jQuery);
 
-
 // typer for hello
-
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -76,7 +73,6 @@ TxtRotate.prototype.tick = function() {
     }, delta);
 };
 
-
 // number count for stats
 jQuery.noConflict();
 (function($) {
@@ -91,36 +87,21 @@ jQuery.noConflict();
             },
 
             {
-                duration: 3000,
+                duration: 7000,
                 easing: 'linear',
                 step: function() {
                     $this.text(Math.floor(this.countNum));
                 },
                 complete: function() {
                     $this.text(this.countNum);
-                    //alert('finished');
                 }
             });
     });
 })(jQuery);
 
-
 // update footer copyright year
-
 var today = new Date();
 var year = today.getFullYear();
 
 var copyright = document.getElementById("copyright");
 copyright.innerHTML = '© Marina Marques '+ year;
-
-
-// close cookie notice
-
-var consent = jQuery('.closeCookieNotice');
-var cookieNotice = jQuery('.notice');
-
-consent.click(function(e){
-    e.preventDefault;
-    console.log('hey');
-   jQuery(cookieNotice).hide();
-});

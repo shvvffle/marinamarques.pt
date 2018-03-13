@@ -375,12 +375,14 @@ span.city {
 
 .button-group {
     cursor: pointer;
-    display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    perspective: 200px;
+    perspective-origin: calc(100% - 50px);
+    margin-top: 2%;
 }
 
-.text {
+.button-group .text {
     background: #008080;
     color: #fff;
     font-size: 18px;
@@ -389,7 +391,7 @@ span.city {
     line-height: 50px;
 }
 
-.icon-cv {
+.button-group .icon-cv {
     font-size: 30px;
     width: 50px;
     height: 50px;
@@ -410,7 +412,7 @@ span.city {
     text-align: center;
 }
 
-a .fa-arrow-circle-down {
+.button-group a .fa-arrow-circle-down {
     color: #008080;
 }
 
@@ -419,21 +421,14 @@ a .fa-arrow-circle-down {
     transform: rotateY(0deg);
 }
 
-.button-group {
-    -webkit-perspective: 200px;
-    perspective: 200px;
-    -webkit-perspective-origin: calc(100% - 50px);
-    perspective-origin: calc(100% - 50px);
-    margin-top: 5%;
-}
-
 .about-inner {
     position: relative;
     padding: 0;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
-.about-inner>img {
+.about-inner > img {
     display: block;
     min-width: 100%;
     height: auto;
@@ -489,7 +484,7 @@ div.button-social a:hover {
 /*/ start count stats /*/
 
 #counter-stats {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
     height: auto;
 }
@@ -646,10 +641,10 @@ div.button-social a:hover {
 .timeline .timeline-experience .timeline-circle {
     position: absolute;
     top: 16px;
-    left: -13px;
+    left: -11px;
     display: block;
-    width: 19px;
-    height: 19px;
+    width: 20px;
+    height: 20px;
     border: 3px solid #ccc;
     border-radius: 50%;
     background-color: #F5F5F5;
@@ -701,7 +696,6 @@ div.button-social a:hover {
 .portfolio-details {
     text-align: center;
 }
-
 .thumbnail {
     max-width: 500px;
     border: none;
@@ -722,6 +716,11 @@ div.button-social a:hover {
     font-size: 14px;
 }
 
+.portfolio-details a {
+    color: #40E0D0;
+    font-weight: 700;
+}
+
 ul.portfolio-tags {
     padding: 10px 0 10px 0;
     text-align: center;
@@ -733,7 +732,8 @@ li.portfolio-tag {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #40E0D0;
-    display: inline;
+    display: inline-block;
+    margin-top: 5px;
     border: 2px solid #40E0D0;
     padding: 8px;
 }
