@@ -1,3 +1,7 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -7,6 +11,9 @@ body {
     background: #fff;
     margin: 0;
     padding: 0;
+    bottom: 0;
+    top: 0;
+    overflow-y: auto;
 }
 
 h2 {
@@ -37,6 +44,59 @@ h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
+[data-tooltip] {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+  
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 7px;
+    width: 160px;
+    border-radius: 3px;
+    background-color: #40E0D0;
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+  [data-tooltip]:after {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #40E0D0; 
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+}
 
 /* SCROLL TO TOP ARROW */
 
@@ -76,7 +136,6 @@ h3, h4, h5 {
     top: 5px;
 }
 
-
 /* END SCROLL TO TOP ARROW */
 
 
@@ -104,7 +163,6 @@ h3, h4, h5 {
     background-position: center;
     margin: -100px 0 0 -100px;
 }
-
 
 /* END PRELOADER */
 
@@ -908,6 +966,14 @@ footer {
 
 footer p {
     margin-top: 50px;
+}
+
+footer p span, footer p.success {
+    color: #40E0D0;
+}
+
+footer p.error {
+    color: red;
 }
 
 .social, footer a {

@@ -99,9 +99,41 @@ jQuery.noConflict();
     });
 })(jQuery);
 
+// copy email to clipboard
+const emailElm = document.querySelector('.js-email');
+const emailText = document.querySelector('.js-email span');
+const original = emailElm.innerHTML;
+
+emailElm.addEventListener('click', function() {
+	const selection = window.getSelection();
+    const range = document.createRange();
+	range.selectNodeContents(emailText);
+	selection.removeAllRanges();
+	selection.addRange(range);
+	try {
+		document.execCommand('copy');
+		selection.removeAllRanges();
+        emailElm.textContent = 'Copied!';
+        emailElm.classList.add('success');
+
+		setTimeout(() => {
+            emailElm.innerHTML = original;
+            emailElm.classList.remove('success');
+		}, 1200);
+	} catch (e) {
+        emailElm.classList.add('error');
+        emailElm.textContent = 'Failed to copy. Please try again.';
+        setTimeout(() => {
+            emailElm.classList.remove('error');
+            emailElm.innerHTML = original;
+		}, 1000);
+	}
+});
+
+
 // update footer copyright year
 var today = new Date();
 var year = today.getFullYear();
 
-var copyright = document.getElementById("copyright");
+var copyright = document.getElementById('copyright');
 copyright.innerHTML = '© Marina Marques '+ year;
