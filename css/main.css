@@ -153,8 +153,8 @@ h3, h4, h5 {
 }
 
 #status {
-    width: 200px;
-    height: 200px;
+    width: 188px;
+    height: 188px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -184,7 +184,13 @@ h3, h4, h5 {
     border: none;
 }
 
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #008080;
+}
+
+.navbar-inverse .navbar-toggle:focus .icon-bar,
+.navbar-inverse .navbar-toggle:hover .icon-bar {
     background-color: #40E0D0;
 }
 
@@ -290,15 +296,16 @@ button.navbar-toggle.collapsed {
     height: auto;
     text-align: center;
     color: white;
-    background: url(../img/mm_header.jpg) no-repeat top center scroll;
+    background: url(../img/mm_header.jpg) no-repeat bottom center;
     background-size: cover;
 }
 
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
-    padding: 15% 0;
-    background: rgba(0, 0, 0, 0.5);
+    padding: 10% 0;
+    background-color: #8c909a;
+    mix-blend-mode: hard-light;
 }
 
 .brand-heading {
@@ -772,6 +779,7 @@ div.button-social a:hover {
 
 .portfolio-details p {
     font-size: 14px;
+    min-height: 80px;
 }
 
 .portfolio-details a {
