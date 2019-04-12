@@ -1,4 +1,4 @@
-<h1> marinamarques.pt </h1>
+<h1> marinamarques.pt - Personal website/resume</h1>
 
 <h2>About</h2>
 Resume landing page with scroll navigation.<br>
