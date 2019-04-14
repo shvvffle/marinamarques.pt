@@ -1,7 +1,12 @@
+/*
+Please do not claim this website as your own. You don't have to give me credit but DON'T claim it's your code. 
+When you use this as a base for your website please remove all tracking (Google Analytics, Heap).
+*/
+
 // Scroll to Top
 jQuery.noConflict();
 (function($) {
-    $(window).scroll(function() {
+    $('body').scroll(function() {
         if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
             $('#return-to-top').fadeIn(200); // Fade in the arrow
         } else {
@@ -98,6 +103,16 @@ jQuery.noConflict();
             });
     });
 })(jQuery);
+
+// stop youtube video on mouseout
+var appearances_item = document.querySelector('.textbox-appearances');
+appearances_item.addEventListener('mouseout', function(evt){
+    var youtube_vid = document.getElementById('youtube').src;
+    var cleaned = youtube_vid.replace('&autoplay=1', '');
+    document.getElementById('youtube').src = cleaned;
+});
+
+
 
 // copy email to clipboard
 const emailElm = document.querySelector('.js-email');
