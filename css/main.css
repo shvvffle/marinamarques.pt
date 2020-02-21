@@ -40,7 +40,9 @@ h2:hover:after {
     width: 100px;
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -49,7 +51,7 @@ h3, h4, h5 {
     z-index: 2;
     cursor: pointer;
 }
-  
+
 /* Hide the tooltip content by default */
 [data-tooltip]:before,
 [data-tooltip]:after {
@@ -77,13 +79,13 @@ h3, h4, h5 {
 }
 
 /* Triangle hack to make tooltip look like a speech bubble */
-  [data-tooltip]:after {
+[data-tooltip]:after {
     position: absolute;
     bottom: 150%;
     left: 50%;
     margin-left: -5px;
     width: 0;
-    border-top: 5px solid #40E0D0; 
+    border-top: 5px solid #40E0D0;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
     content: " ";
@@ -198,7 +200,8 @@ h3, h4, h5 {
     border: none;
 }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
     border: none;
 }
 
@@ -239,7 +242,9 @@ h3, h4, h5 {
     color: #40E0D0;
 }
 
-#ResponsiveNav ul li a:hover:after, #ResponsiveNav ul li a:focus:after, #ResponsiveNav ul li a:active:after {
+#ResponsiveNav ul li a:hover:after,
+#ResponsiveNav ul li a:focus:after,
+#ResponsiveNav ul li a:active:after {
     width: 70%;
 }
 
@@ -248,7 +253,8 @@ button.navbar-toggle.collapsed {
     border: none;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
     background-color: #40E0D0;
     border: none;
 }
@@ -269,11 +275,11 @@ button.navbar-toggle.collapsed {
 }
 
 .navbar-collapse.collapse {
-    display: none!important;
+    display: none !important;
 }
 
 .navbar-nav {
-    float: none!important;
+    float: none !important;
 }
 
 .navbar-nav>li {
@@ -296,7 +302,7 @@ button.navbar-toggle.collapsed {
     height: auto;
     text-align: center;
     color: white;
-    background: url(../img/mm_header.jpg) no-repeat bottom center;
+    background: url(../img/mm_header.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -334,9 +340,11 @@ span.city {
         height: 100%;
         padding: 0;
     }
+
     .intro .intro-body .brand-heading {
         font-size: 130px;
     }
+
     .intro .intro-body .intro-text {
         font-size: 35px;
     }
@@ -372,31 +380,37 @@ span.city {
         opacity: 0;
         -webkit-transform: scaleY(1) scaleX(1);
     }
+
     5% {
         top: 8px;
         opacity: 0.8;
         -webkit-transform: scaleY(1.2) scaleX(1.2);
     }
+
     10% {
         top: 8px;
         opacity: 1;
         -webkit-transform: scaleY(1.6) scaleX(1.6);
     }
+
     15% {
         top: 8px;
         opacity: 1;
         -webkit-transform: scaleY(1.2) scaleX(1.2);
     }
+
     20% {
         top: 8px;
         opacity: 1;
         -webkit-transform: scaleY(1.2) scaleX(1.2);
     }
+
     30% {
         top: 15px;
         opacity: 1;
         -webkit-transform: scaleY(1.2) scaleX(1.2);
     }
+
     100% {
         top: 30px;
         opacity: 0;
@@ -493,7 +507,7 @@ span.city {
     margin-bottom: 10px;
 }
 
-.about-inner > img {
+.about-inner>img {
     display: block;
     min-width: 100%;
     height: auto;
@@ -541,8 +555,10 @@ div.button-social a:hover {
     color: #40E0D0;
 }
 
-.button-group:focus, .icon-cv:focus, .text:focus {
-  outline:0;
+.button-group:focus,
+.icon-cv:focus,
+.text:focus {
+    outline: 0;
 }
 
 
@@ -699,7 +715,11 @@ div.button-social a:hover {
     font-weight: 700;
 }
 
-.timeline .timeline-experience-img, .timeline .timeline-experience-info, .timeline .timeline-experience-info h5, .timeline .timeline-experience-info .role, .timeline .timeline-experience-info p {
+.timeline .timeline-experience-img,
+.timeline .timeline-experience-info,
+.timeline .timeline-experience-info h5,
+.timeline .timeline-experience-info .role,
+.timeline .timeline-experience-info p {
     clear: none;
 }
 
@@ -761,6 +781,7 @@ div.button-social a:hover {
 .portfolio-details {
     text-align: center;
 }
+
 .thumbnail {
     max-width: 500px;
     border: none;
@@ -843,9 +864,11 @@ div.button-weblink {
     text-align: center;
 }
 
-.portfolio-tag:focus, .portfolio-tags:focus{
-  outline:0;
+.portfolio-tag:focus,
+.portfolio-tags:focus {
+    outline: 0;
 }
+
 /*/ end work portfolio /*/
 
 
@@ -920,6 +943,7 @@ div.button-weblink {
 .appearances-details {
     text-align: center;
 }
+
 .thumbnail {
     max-width: 500px;
     border: none;
@@ -985,22 +1009,22 @@ span.appearances-link {
     right: 0;
     left: 0;
     top: 0;
-  }
+}
 
-  .lightbox-container {
+.lightbox-container {
     position: relative;
     margin: -25px auto;
     display: block;
     width: 100%;
     height: auto;
     z-index: 10;
-  }
+}
 
-  .lightbox-content {
+.lightbox-content {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
-  }
+}
 
-  .lightbox-close {
+.lightbox-close {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -1011,25 +1035,25 @@ span.appearances-link {
     right: 0px;
     cursor: pointer;
     outline: 0;
-  }
+}
 
-  .video-container {
+.video-container {
     padding-bottom: 56.25%;
     position: relative;
     padding-top: 30px;
     overflow: hidden;
     height: 0;
-  }
-  
-  .video-container iframe,
-  .video-container object,
-  .video-container embed {
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
     position: absolute;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
-  }
+}
 
 /*/ end appearances /*/
 
@@ -1082,7 +1106,8 @@ span.appearances-link {
     min-height: 200px;
 }
 
-.carousel-control.left, .carousel-control.right {
+.carousel-control.left,
+.carousel-control.right {
     background: none;
 }
 
@@ -1109,7 +1134,8 @@ footer p {
     margin-top: 50px;
 }
 
-footer p span, footer p.success {
+footer p span,
+footer p.success {
     color: #40E0D0;
 }
 
@@ -1117,13 +1143,16 @@ footer p.error {
     color: red;
 }
 
-.social, footer a {
+.social,
+footer a {
     font-size: 30px;
     color: #24242a;
     margin: 10px;
 }
 
-footer a:hover, footer a:after, footer a:visited footer a:focus {
+footer a:hover,
+footer a:after,
+footer a:visited footer a:focus {
     color: #40E0D0;
 }
 
@@ -1164,24 +1193,24 @@ footer a:hover, footer a:after, footer a:visited footer a:focus {
 
 @media only screen and (max-width: 480px) {
     .brand-heading {
-      font-size: 85px;
-      margin-top: 10%;
+        font-size: 85px;
+        margin-top: 10%;
     }
 
     .col-exp {
-      margin-top: 15%;
+        margin-top: 15%;
     }
 
     .timeline .timeline-experience {
-      margin-left: 20px;
-      padding-left: 20px;
+        margin-left: 20px;
+        padding-left: 20px;
     }
 
     .timeline time {
-      width: 40px;
+        width: 40px;
     }
 
     .services-item {
-      margin-bottom: 15%;
+        margin-bottom: 15%;
     }
 }
