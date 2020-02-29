@@ -7,16 +7,21 @@ When you use this as a base for your website please remove all tracking (Google 
 jQuery.noConflict();
 (function($) {
     $('body').scroll(function() {
-        if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+        if ($(this).scrollTop() >= 50) {
+            // If page is scrolled more than 50px
             $('#return-to-top').fadeIn(200); // Fade in the arrow
         } else {
             $('#return-to-top').fadeOut(200); // Else fade out the arrow
         }
     });
-    $('#return-to-top').click(function() { // When arrow is clicked
-        $('body,html').animate({
-            scrollTop: 0 // Scroll to top of body
-        }, 500);
+    $('#return-to-top').click(function() {
+        // When arrow is clicked
+        $('body,html').animate(
+            {
+                scrollTop: 0 // Scroll to top of body
+            },
+            500
+        );
     });
 })(jQuery);
 
@@ -26,9 +31,15 @@ jQuery.noConflict();
     $(function() {
         $('a.page-scroll').bind('click', function(event) {
             var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-            }, 1500, 'easeInOutExpo');
+            $('html, body')
+                .stop()
+                .animate(
+                    {
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    },
+                    1500,
+                    'easeInOutExpo'
+                );
             event.preventDefault();
         });
     });
@@ -87,7 +98,8 @@ jQuery.noConflict();
 
         $({
             countNum: $this.text()
-        }).animate({
+        }).animate(
+            {
                 countNum: countTo
             },
 
@@ -100,19 +112,26 @@ jQuery.noConflict();
                 complete: function() {
                     $this.text(this.countNum);
                 }
-            });
+            }
+        );
     });
 })(jQuery);
 
 // stop youtube video on mouseout
-var appearances_item = document.querySelector('.textbox-appearances');
-appearances_item.addEventListener('mouseout', function(evt){
-    var youtube_vid = document.getElementById('youtube').src;
-    var cleaned = youtube_vid.replace('&autoplay=1', '');
-    document.getElementById('youtube').src = cleaned;
+var appearances_item_flag = document.querySelector('.js-flag');
+appearances_item_flag.addEventListener('mouseout', function(evt) {
+    var youtube_vid_flag = document.getElementById('youtube').src;
+    var cleaned_flag = youtube_vid_flag.replace('&autoplay=1', '');
+    document.getElementById('youtube').src = cleaned_flag;
 });
 
-
+// stop youtube video on mouseout
+var appearances_item_sherpany = document.querySelector('.js-sherpany');
+appearances_item_sherpany.addEventListener('mouseout', function(evt) {
+    var youtube_vid_sherpany = document.getElementById('youtubeSherpany').src;
+    var cleaned_sherpany = youtube_vid_sherpany.replace('&autoplay=1', '');
+    document.getElementById('youtubeSherpany').src = cleaned_sherpany;
+});
 
 // copy email to clipboard
 const emailElm = document.querySelector('.js-email');
@@ -120,35 +139,34 @@ const emailText = document.querySelector('.js-email span');
 const original = emailElm.innerHTML;
 
 emailElm.addEventListener('click', function() {
-	const selection = window.getSelection();
+    const selection = window.getSelection();
     const range = document.createRange();
-	range.selectNodeContents(emailText);
-	selection.removeAllRanges();
-	selection.addRange(range);
-	try {
-		document.execCommand('copy');
-		selection.removeAllRanges();
+    range.selectNodeContents(emailText);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    try {
+        document.execCommand('copy');
+        selection.removeAllRanges();
         emailElm.textContent = 'Copied!';
         emailElm.classList.add('success');
 
-		setTimeout(() => {
+        setTimeout(() => {
             emailElm.innerHTML = original;
             emailElm.classList.remove('success');
-		}, 1200);
-	} catch (e) {
+        }, 1200);
+    } catch (e) {
         emailElm.classList.add('error');
         emailElm.textContent = 'Failed to copy. Please try again.';
         setTimeout(() => {
             emailElm.classList.remove('error');
             emailElm.innerHTML = original;
-		}, 1000);
-	}
+        }, 1000);
+    }
 });
-
 
 // update footer copyright year
 var today = new Date();
 var year = today.getFullYear();
 
 var copyright = document.getElementById('copyright');
-copyright.innerHTML = '© Marina Marques '+ year;
+copyright.innerHTML = '© Marina Marques ' + year;
